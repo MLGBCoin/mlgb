@@ -1,0 +1,22 @@
+noinst_PROGRAMS += \
+  mlgb/GenerateParams \
+  mlgb/CreateJoinSplit
+
+# tool for generating our public parameters
+mlgb_GenerateParams_SOURCES = mlgb/GenerateParams.cpp
+mlgb_GenerateParams_LDADD = \
+  $(BOOST_LIBS) \
+  $(LIBZCASH) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_CRYPTO) \
+  $(LIBZCASH_LIBS)
+
+# tool for profiling the creation of joinsplits
+mlgb_CreateJoinSplit_SOURCES = mlgb/CreateJoinSplit.cpp
+mlgb_CreateJoinSplit_LDADD = \
+  $(LIBBITCOIN_COMMON) \
+  $(LIBZCASH) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_CRYPTO) \
+  $(BOOST_LIBS) \
+  $(LIBZCASH_LIBS)

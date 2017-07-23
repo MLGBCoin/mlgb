@@ -1,0 +1,5 @@
+Building Mlgb
+
+See the Mlgb github wiki (https://github.com/mlgb/mlgb/wiki) for instructions on building mlgbd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Mlgb.
